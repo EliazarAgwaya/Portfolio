@@ -1,6 +1,6 @@
-import uniqid from 'uniqid'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LaunchIcon from '@material-ui/icons/Launch'
+
+import React from "react"
+import { FaGithub, FaLaptop } from 'react-icons/fa';
 
 const ProjectContainer = ({ project }) => (
   <div className='project'>
@@ -9,8 +9,8 @@ const ProjectContainer = ({ project }) => (
     <p className='project__description'>{project.description}</p>
     {project.stack && (
       <ul className='project__stack'>
-        {project.stack.map((item) => (
-          <li key={uniqid()} className='project__stack-item'>
+        {project.stack.map((item, index) => (
+          <li key={index} className='project__stack-item'>
             {item}
           </li>
         ))}
@@ -23,7 +23,7 @@ const ProjectContainer = ({ project }) => (
         aria-label='source code'
         className='link link--icon'
       >
-        <GitHubIcon />
+        <FaGithub />
       </a>
     )}
 
@@ -33,7 +33,7 @@ const ProjectContainer = ({ project }) => (
         aria-label='live preview'
         className='link link--icon'
       >
-        <LaunchIcon />
+        <FaLaptop />
       </a>
     )}
   </div>
