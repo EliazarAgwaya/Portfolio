@@ -1,6 +1,6 @@
 
 import React from "react"
-import { FaGithub, FaLaptop } from 'react-icons/fa';
+import { FaGithub, FaLaptop, FaLink, FaLinode, FaStaylinked, FaStreetView } from 'react-icons/fa';
 
 const ProjectContainer = ({ project }) => (
   <div className='project'>
@@ -33,7 +33,7 @@ const ProjectContainer = ({ project }) => (
         aria-label='live preview'
         className='link link--icon'
       >
-        <FaLaptop />
+        <FaLink />
       </a>
     )}
   </div>

@@ -1,8 +1,10 @@
-import {FaGithub, FaHeart } from 'react-icons/fa';
+import {FaGithub, FaHeart, FaLinkedin } from 'react-icons/fa';
 import { about } from './portfolio'
+import resume from './image/resume.pdf'
+import image from './image/photo.jpg'
 
 const About = () => {
-  const { name, role, description, resume, social } = about
+  const { name, role, description, social } = about
 
   return (
     <div className='about center'>
@@ -11,6 +13,8 @@ const About = () => {
           Hi, I am <span className='about__name'>{name}.</span>
         </h1>
       )}
+
+<img id="myI" src={image}/>
 
       {role && <h2 className='about__role'>A {role}.</h2>}
       <p className='about__desc'>{description && description}</p>
@@ -42,7 +46,7 @@ const About = () => {
                 aria-label='linkedin'
                 className='link link--icon'
               >
-                <FaHeart/>
+                <FaLinkedin/>
               </a>
             )}
           </>

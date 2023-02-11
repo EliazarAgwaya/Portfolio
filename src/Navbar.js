@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react'
-import {FaAddressBook, FaHeart, FaRegMinusSquare, FaUserMinus } from 'react-icons/fa';
+import {FaAddressBook, FaBlackTie, FaHeart, FaLightbulb, FaMoon, FaRainbow, FaRegMinusSquare, FaUserMinus } from 'react-icons/fa';
 // import Brightness2Icon from '@material-ui/icons/Brightness2'
 // import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 // import MenuIcon from '@material-ui/icons/Menu'
@@ -62,7 +62,7 @@ const Navbar = () => {
         className='btn btn--icon nav__theme'
         aria-label='toggle theme'
       >
-        {themeName === 'dark' ? <FaHeart /> : <FaAddressBook />}
+        {themeName === 'dark' ? <FaMoon /> : <FaLightbulb />}
       </button>
 
       <button
@@ -71,7 +71,7 @@ const Navbar = () => {
         className='btn btn--icon nav__hamburger'
         aria-label='toggle navigation'
       >
-        {showNavList ? <FaRegMinusSquare /> : <FaUserMinus />}
+        {showNavList ? <FaHeart /> : <FaRainbow />}
       </button>
     </nav>
   )
