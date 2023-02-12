@@ -34,7 +34,7 @@ const header = {
         'This app provides a way to display the trends in technology, one can see the trends, add a trend and also add likes to a particular trend',
       stack: ['React', 'CSS', 'HTML'],
       sourceCode: 'https://github.com/EliazarAgwaya/Trending-Tech-Display',
-      livePreview: 'https://eliazaragwaya.github.io/Trending-Tech-Display/',
+      livePreview: 'trendingtechdisplay.netlify.app/',
     },
     {
       name: 'Study Material Tracer',
@@ -42,7 +42,7 @@ const header = {
         'The app just traces the study materials for personal use. One can comment on a particular material, can add a material, can delete and also add likes',
       stack: ['HTML', 'CSS', 'React', "Ruby"],
       sourceCode: 'https://github.com/EliazarAgwaya/Study-Materials-Tracer',
-      livePreview: 'https://eliazaragwaya.github.io/Study-Materials-Tracer/',
+      livePreview: 'study-materials-tracer.vercel.app/',
     },
     {
       name: 'Budget Tracer',
